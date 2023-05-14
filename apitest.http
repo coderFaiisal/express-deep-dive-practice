@@ -1,0 +1,46 @@
+GET http://localhost:5000/health
+
+### 
+
+GET http://localhost:5000/api/v1/tickets
+
+###
+
+POST http://localhost:5000/api/v1/tickets
+Content-Type: application/json
+
+{
+    "username": "Shohag",
+    "price": 10
+}
+###
+
+POST http://localhost:5000/api/v1/tickets
+Content-Type: application/json
+
+{
+    "username": "Sony",
+    "price": 10
+}
+
+###
+POST http://localhost:5000/api/v1/tickets/bulk
+Content-Type: application/json
+
+{
+    "username": "Nazrul",
+    "price": 10,
+    "quantity":2
+}
+
+###
+GET http://localhost:5000/api/v1/tickets/u/Sony
+
+###
+DELETE http://localhost:5000/api/v1/tickets/u/Sony
+
+###
+DELETE http://localhost:5000/api/v1/tickets/t/FCcOmDypX
+
+###
+GET http://localhost:5000/api/v1/tickets/draw?wc=1
